@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27183C2319539DD556E1697E /* Pods_ScrollPageControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD3B75D8A252D9E8017E33A /* Pods_ScrollPageControl.framework */; };
+		5372B9091FE8DADB00095084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9081FE8DADB00095084 /* AppDelegate.swift */; };
+		5372B90B1FE8DADB00095084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B90A1FE8DADB00095084 /* ViewController.swift */; };
+		5372B90E1FE8DADB00095084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5372B90C1FE8DADB00095084 /* Main.storyboard */; };
+		5372B9101FE8DADB00095084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5372B90F1FE8DADB00095084 /* Assets.xcassets */; };
+		5372B9131FE8DADB00095084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5372B9111FE8DADB00095084 /* LaunchScreen.storyboard */; };
+		5372B91E1FE8DADB00095084 /* ScrollPageControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B91D1FE8DADB00095084 /* ScrollPageControlTests.swift */; };
+		5372B9291FE8DADB00095084 /* ScrollPageControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9281FE8DADB00095084 /* ScrollPageControlUITests.swift */; };
+		5372B9381FE8DB2500095084 /* ScrollContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9371FE8DB2500095084 /* ScrollContentView.swift */; };
+		5372B93A1FE8DB3000095084 /* ScrollPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9391FE8DB3000095084 /* ScrollPageView.swift */; };
+		5372B93C1FE8DB3B00095084 /* ScrollSegmentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B93B1FE8DB3B00095084 /* ScrollSegmentStyle.swift */; };
+		5372B93E1FE8DB4500095084 /* ScrollSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B93D1FE8DB4500095084 /* ScrollSegmentView.swift */; };
+		5372B9411FE8DC0200095084 /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9401FE8DC0200095084 /* UIView_Extension.swift */; };
+		5372B9431FE8DC5500095084 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9421FE8DC5500095084 /* String_Extension.swift */; };
+		5372B9451FE8DC8F00095084 /* HPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9441FE8DC8F00095084 /* HPrint.swift */; };
+		5372B9471FE8DD1300095084 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9461FE8DD1300095084 /* UIColor_Extension.swift */; };
+		5372B9491FE8DD6B00095084 /* UILabel_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9481FE8DD6B00095084 /* UILabel_Extension.swift */; };
+		5372B94B1FE8DDB600095084 /* UnityDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B94A1FE8DDB600095084 /* UnityDefine.swift */; };
+		5372B94D1FE8DE1700095084 /* UIDevice_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B94C1FE8DE1700095084 /* UIDevice_Extension.swift */; };
+		5372B9511FE8DFA500095084 /* NotificationName_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9501FE8DFA500095084 /* NotificationName_Extension.swift */; };
+		5372B9531FE8E48400095084 /* NormalDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9521FE8E48400095084 /* NormalDemoVC.swift */; };
+		5372B9551FE8ECE900095084 /* TimeSelectDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9541FE8ECE900095084 /* TimeSelectDemoVC.swift */; };
+		5372B9591FE8ED4300095084 /* BaseTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9581FE8ED4300095084 /* BaseTabBarVC.swift */; };
+		5372B95B1FE8EDBC00095084 /* BaseNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B95A1FE8EDBC00095084 /* BaseNavigationVC.swift */; };
+		5372B9611FE8F53D00095084 /* ReserveTimePickerDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9601FE8F53D00095084 /* ReserveTimePickerDetailVC.swift */; };
+		5372B9641FE8F57700095084 /* ReserveTimePickerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9631FE8F57700095084 /* ReserveTimePickerTabView.swift */; };
+		5372B9661FE8F5B300095084 /* reserveTimePickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9651FE8F5B300095084 /* reserveTimePickerDetailView.swift */; };
+		5372B9681FE8F5ED00095084 /* ReserveTimeStampManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9671FE8F5ED00095084 /* ReserveTimeStampManager.swift */; };
+		5372B96A1FE8F85F00095084 /* Double_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B9691FE8F85F00095084 /* Double_Extension.swift */; };
+		5372B96C1FE8F96000095084 /* UIButton_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372B96B1FE8F96000095084 /* UIButton_Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5372B91A1FE8DADB00095084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5372B8FD1FE8DADB00095084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5372B9041FE8DADB00095084;
+			remoteInfo = ScrollPageControl;
+		};
+		5372B9251FE8DADB00095084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5372B8FD1FE8DADB00095084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5372B9041FE8DADB00095084;
+			remoteInfo = ScrollPageControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5372B9051FE8DADB00095084 /* ScrollPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5372B9081FE8DADB00095084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5372B90A1FE8DADB00095084 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5372B90D1FE8DADB00095084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5372B90F1FE8DADB00095084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5372B9121FE8DADB00095084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5372B9141FE8DADB00095084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5372B9191FE8DADB00095084 /* ScrollPageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollPageControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5372B91D1FE8DADB00095084 /* ScrollPageControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageControlTests.swift; sourceTree = "<group>"; };
+		5372B91F1FE8DADB00095084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5372B9241FE8DADB00095084 /* ScrollPageControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollPageControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5372B9281FE8DADB00095084 /* ScrollPageControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageControlUITests.swift; sourceTree = "<group>"; };
+		5372B92A1FE8DADB00095084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5372B9371FE8DB2500095084 /* ScrollContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollContentView.swift; sourceTree = "<group>"; };
+		5372B9391FE8DB3000095084 /* ScrollPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageView.swift; sourceTree = "<group>"; };
+		5372B93B1FE8DB3B00095084 /* ScrollSegmentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentStyle.swift; sourceTree = "<group>"; };
+		5372B93D1FE8DB4500095084 /* ScrollSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentView.swift; sourceTree = "<group>"; };
+		5372B9401FE8DC0200095084 /* UIView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
+		5372B9421FE8DC5500095084 /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		5372B9441FE8DC8F00095084 /* HPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPrint.swift; sourceTree = "<group>"; };
+		5372B9461FE8DD1300095084 /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
+		5372B9481FE8DD6B00095084 /* UILabel_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel_Extension.swift; sourceTree = "<group>"; };
+		5372B94A1FE8DDB600095084 /* UnityDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityDefine.swift; sourceTree = "<group>"; };
+		5372B94C1FE8DE1700095084 /* UIDevice_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice_Extension.swift; sourceTree = "<group>"; };
+		5372B9501FE8DFA500095084 /* NotificationName_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName_Extension.swift; sourceTree = "<group>"; };
+		5372B9521FE8E48400095084 /* NormalDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalDemoVC.swift; sourceTree = "<group>"; };
+		5372B9541FE8ECE900095084 /* TimeSelectDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectDemoVC.swift; sourceTree = "<group>"; };
+		5372B9581FE8ED4300095084 /* BaseTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarVC.swift; sourceTree = "<group>"; };
+		5372B95A1FE8EDBC00095084 /* BaseNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationVC.swift; sourceTree = "<group>"; };
+		5372B9601FE8F53D00095084 /* ReserveTimePickerDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveTimePickerDetailVC.swift; sourceTree = "<group>"; };
+		5372B9631FE8F57700095084 /* ReserveTimePickerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveTimePickerTabView.swift; sourceTree = "<group>"; };
+		5372B9651FE8F5B300095084 /* reserveTimePickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reserveTimePickerDetailView.swift; sourceTree = "<group>"; };
+		5372B9671FE8F5ED00095084 /* ReserveTimeStampManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveTimeStampManager.swift; sourceTree = "<group>"; };
+		5372B9691FE8F85F00095084 /* Double_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double_Extension.swift; sourceTree = "<group>"; };
+		5372B96B1FE8F96000095084 /* UIButton_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton_Extension.swift; sourceTree = "<group>"; };
+		6DD3B75D8A252D9E8017E33A /* Pods_ScrollPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F77025588CA3D056DC86ECB /* Pods-ScrollPageControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollPageControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollPageControl/Pods-ScrollPageControl.release.xcconfig"; sourceTree = "<group>"; };
+		760FB2CC190DD9E95A58F444 /* Pods-ScrollPageControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollPageControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollPageControl/Pods-ScrollPageControl.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5372B9021FE8DADB00095084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27183C2319539DD556E1697E /* Pods_ScrollPageControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5372B9161FE8DADB00095084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5372B9211FE8DADB00095084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5372B8FC1FE8DADB00095084 = {
+			isa = PBXGroup;
+			children = (
+				5372B9071FE8DADB00095084 /* ScrollPageControl */,
+				5372B91C1FE8DADB00095084 /* ScrollPageControlTests */,
+				5372B9271FE8DADB00095084 /* ScrollPageControlUITests */,
+				5372B9061FE8DADB00095084 /* Products */,
+				79072C89A32525BD5215C88E /* Pods */,
+				80689DD520440D0FC77D77B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5372B9061FE8DADB00095084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5372B9051FE8DADB00095084 /* ScrollPageControl.app */,
+				5372B9191FE8DADB00095084 /* ScrollPageControlTests.xctest */,
+				5372B9241FE8DADB00095084 /* ScrollPageControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5372B9071FE8DADB00095084 /* ScrollPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				5372B9571FE8ED0F00095084 /* Demo */,
+				5372B93F1FE8DBF600095084 /* Utils */,
+				5372B9361FE8DB0500095084 /* ScrollPage */,
+				5372B9081FE8DADB00095084 /* AppDelegate.swift */,
+				5372B90A1FE8DADB00095084 /* ViewController.swift */,
+				5372B90C1FE8DADB00095084 /* Main.storyboard */,
+				5372B90F1FE8DADB00095084 /* Assets.xcassets */,
+				5372B9111FE8DADB00095084 /* LaunchScreen.storyboard */,
+				5372B9141FE8DADB00095084 /* Info.plist */,
+			);
+			path = ScrollPageControl;
+			sourceTree = "<group>";
+		};
+		5372B91C1FE8DADB00095084 /* ScrollPageControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				5372B91D1FE8DADB00095084 /* ScrollPageControlTests.swift */,
+				5372B91F1FE8DADB00095084 /* Info.plist */,
+			);
+			path = ScrollPageControlTests;
+			sourceTree = "<group>";
+		};
+		5372B9271FE8DADB00095084 /* ScrollPageControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5372B9281FE8DADB00095084 /* ScrollPageControlUITests.swift */,
+				5372B92A1FE8DADB00095084 /* Info.plist */,
+			);
+			path = ScrollPageControlUITests;
+			sourceTree = "<group>";
+		};
+		5372B9361FE8DB0500095084 /* ScrollPage */ = {
+			isa = PBXGroup;
+			children = (
+				5372B9371FE8DB2500095084 /* ScrollContentView.swift */,
+				5372B9391FE8DB3000095084 /* ScrollPageView.swift */,
+				5372B93B1FE8DB3B00095084 /* ScrollSegmentStyle.swift */,
+				5372B93D1FE8DB4500095084 /* ScrollSegmentView.swift */,
+			);
+			path = ScrollPage;
+			sourceTree = "<group>";
+		};
+		5372B93F1FE8DBF600095084 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5372B9441FE8DC8F00095084 /* HPrint.swift */,
+				5372B9401FE8DC0200095084 /* UIView_Extension.swift */,
+				5372B9421FE8DC5500095084 /* String_Extension.swift */,
+				5372B9461FE8DD1300095084 /* UIColor_Extension.swift */,
+				5372B9481FE8DD6B00095084 /* UILabel_Extension.swift */,
+				5372B94A1FE8DDB600095084 /* UnityDefine.swift */,
+				5372B94C1FE8DE1700095084 /* UIDevice_Extension.swift */,
+				5372B9501FE8DFA500095084 /* NotificationName_Extension.swift */,
+				5372B9691FE8F85F00095084 /* Double_Extension.swift */,
+				5372B96B1FE8F96000095084 /* UIButton_Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5372B9571FE8ED0F00095084 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5372B95E1FE8F4E100095084 /* normalUse */,
+				5372B95C1FE8F4CF00095084 /* combineUse */,
+				5372B95D1FE8F4DB00095084 /* todo */,
+				5372B9581FE8ED4300095084 /* BaseTabBarVC.swift */,
+				5372B95A1FE8EDBC00095084 /* BaseNavigationVC.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5372B95C1FE8F4CF00095084 /* combineUse */ = {
+			isa = PBXGroup;
+			children = (
+				5372B95F1FE8F4F000095084 /* reserveTime */,
+				5372B9541FE8ECE900095084 /* TimeSelectDemoVC.swift */,
+			);
+			path = combineUse;
+			sourceTree = "<group>";
+		};
+		5372B95D1FE8F4DB00095084 /* todo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = todo;
+			sourceTree = "<group>";
+		};
+		5372B95E1FE8F4E100095084 /* normalUse */ = {
+			isa = PBXGroup;
+			children = (
+				5372B9521FE8E48400095084 /* NormalDemoVC.swift */,
+			);
+			path = normalUse;
+			sourceTree = "<group>";
+		};
+		5372B95F1FE8F4F000095084 /* reserveTime */ = {
+			isa = PBXGroup;
+			children = (
+				5372B9621FE8F56C00095084 /* Views */,
+				5372B9601FE8F53D00095084 /* ReserveTimePickerDetailVC.swift */,
+				5372B9671FE8F5ED00095084 /* ReserveTimeStampManager.swift */,
+			);
+			path = reserveTime;
+			sourceTree = "<group>";
+		};
+		5372B9621FE8F56C00095084 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5372B9631FE8F57700095084 /* ReserveTimePickerTabView.swift */,
+				5372B9651FE8F5B300095084 /* reserveTimePickerDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79072C89A32525BD5215C88E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				760FB2CC190DD9E95A58F444 /* Pods-ScrollPageControl.debug.xcconfig */,
+				6F77025588CA3D056DC86ECB /* Pods-ScrollPageControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80689DD520440D0FC77D77B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DD3B75D8A252D9E8017E33A /* Pods_ScrollPageControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5372B9041FE8DADB00095084 /* ScrollPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5372B92D1FE8DADB00095084 /* Build configuration list for PBXNativeTarget "ScrollPageControl" */;
+			buildPhases = (
+				470063E45DFB02A376277E87 /* [CP] Check Pods Manifest.lock */,
+				5372B9011FE8DADB00095084 /* Sources */,
+				5372B9021FE8DADB00095084 /* Frameworks */,
+				5372B9031FE8DADB00095084 /* Resources */,
+				C5DCEDD9708E5E25BDFA6ED2 /* [CP] Embed Pods Frameworks */,
+				57330B7239DE59070BF0549C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollPageControl;
+			productName = ScrollPageControl;
+			productReference = 5372B9051FE8DADB00095084 /* ScrollPageControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5372B9181FE8DADB00095084 /* ScrollPageControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5372B9301FE8DADB00095084 /* Build configuration list for PBXNativeTarget "ScrollPageControlTests" */;
+			buildPhases = (
+				5372B9151FE8DADB00095084 /* Sources */,
+				5372B9161FE8DADB00095084 /* Frameworks */,
+				5372B9171FE8DADB00095084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5372B91B1FE8DADB00095084 /* PBXTargetDependency */,
+			);
+			name = ScrollPageControlTests;
+			productName = ScrollPageControlTests;
+			productReference = 5372B9191FE8DADB00095084 /* ScrollPageControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5372B9231FE8DADB00095084 /* ScrollPageControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5372B9331FE8DADB00095084 /* Build configuration list for PBXNativeTarget "ScrollPageControlUITests" */;
+			buildPhases = (
+				5372B9201FE8DADB00095084 /* Sources */,
+				5372B9211FE8DADB00095084 /* Frameworks */,
+				5372B9221FE8DADB00095084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5372B9261FE8DADB00095084 /* PBXTargetDependency */,
+			);
+			name = ScrollPageControlUITests;
+			productName = ScrollPageControlUITests;
+			productReference = 5372B9241FE8DADB00095084 /* ScrollPageControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5372B8FD1FE8DADB00095084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = lawrece;
+				TargetAttributes = {
+					5372B9041FE8DADB00095084 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5372B9181FE8DADB00095084 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5372B9041FE8DADB00095084;
+					};
+					5372B9231FE8DADB00095084 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5372B9041FE8DADB00095084;
+					};
+				};
+			};
+			buildConfigurationList = 5372B9001FE8DADB00095084 /* Build configuration list for PBXProject "ScrollPageControl" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5372B8FC1FE8DADB00095084;
+			productRefGroup = 5372B9061FE8DADB00095084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5372B9041FE8DADB00095084 /* ScrollPageControl */,
+				5372B9181FE8DADB00095084 /* ScrollPageControlTests */,
+				5372B9231FE8DADB00095084 /* ScrollPageControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5372B9031FE8DADB00095084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372B9131FE8DADB00095084 /* LaunchScreen.storyboard in Resources */,
+				5372B9101FE8DADB00095084 /* Assets.xcassets in Resources */,
+				5372B90E1FE8DADB00095084 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5372B9171FE8DADB00095084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5372B9221FE8DADB00095084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		470063E45DFB02A376277E87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollPageControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57330B7239DE59070BF0549C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollPageControl/Pods-ScrollPageControl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5DCEDD9708E5E25BDFA6ED2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScrollPageControl/Pods-ScrollPageControl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollPageControl/Pods-ScrollPageControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5372B9011FE8DADB00095084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372B94B1FE8DDB600095084 /* UnityDefine.swift in Sources */,
+				5372B96C1FE8F96000095084 /* UIButton_Extension.swift in Sources */,
+				5372B9591FE8ED4300095084 /* BaseTabBarVC.swift in Sources */,
+				5372B90B1FE8DADB00095084 /* ViewController.swift in Sources */,
+				5372B9381FE8DB2500095084 /* ScrollContentView.swift in Sources */,
+				5372B9661FE8F5B300095084 /* reserveTimePickerDetailView.swift in Sources */,
+				5372B9451FE8DC8F00095084 /* HPrint.swift in Sources */,
+				5372B9411FE8DC0200095084 /* UIView_Extension.swift in Sources */,
+				5372B93A1FE8DB3000095084 /* ScrollPageView.swift in Sources */,
+				5372B9611FE8F53D00095084 /* ReserveTimePickerDetailVC.swift in Sources */,
+				5372B95B1FE8EDBC00095084 /* BaseNavigationVC.swift in Sources */,
+				5372B9431FE8DC5500095084 /* String_Extension.swift in Sources */,
+				5372B93E1FE8DB4500095084 /* ScrollSegmentView.swift in Sources */,
+				5372B9531FE8E48400095084 /* NormalDemoVC.swift in Sources */,
+				5372B9641FE8F57700095084 /* ReserveTimePickerTabView.swift in Sources */,
+				5372B9511FE8DFA500095084 /* NotificationName_Extension.swift in Sources */,
+				5372B93C1FE8DB3B00095084 /* ScrollSegmentStyle.swift in Sources */,
+				5372B9091FE8DADB00095084 /* AppDelegate.swift in Sources */,
+				5372B9471FE8DD1300095084 /* UIColor_Extension.swift in Sources */,
+				5372B94D1FE8DE1700095084 /* UIDevice_Extension.swift in Sources */,
+				5372B9681FE8F5ED00095084 /* ReserveTimeStampManager.swift in Sources */,
+				5372B9551FE8ECE900095084 /* TimeSelectDemoVC.swift in Sources */,
+				5372B9491FE8DD6B00095084 /* UILabel_Extension.swift in Sources */,
+				5372B96A1FE8F85F00095084 /* Double_Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5372B9151FE8DADB00095084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372B91E1FE8DADB00095084 /* ScrollPageControlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5372B9201FE8DADB00095084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372B9291FE8DADB00095084 /* ScrollPageControlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5372B91B1FE8DADB00095084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5372B9041FE8DADB00095084 /* ScrollPageControl */;
+			targetProxy = 5372B91A1FE8DADB00095084 /* PBXContainerItemProxy */;
+		};
+		5372B9261FE8DADB00095084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5372B9041FE8DADB00095084 /* ScrollPageControl */;
+			targetProxy = 5372B9251FE8DADB00095084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5372B90C1FE8DADB00095084 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5372B90D1FE8DADB00095084 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5372B9111FE8DADB00095084 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5372B9121FE8DADB00095084 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5372B92B1FE8DADB00095084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5372B92C1FE8DADB00095084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5372B92E1FE8DADB00095084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760FB2CC190DD9E95A58F444 /* Pods-ScrollPageControl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollPageControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrence.ScrollPageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5372B92F1FE8DADB00095084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F77025588CA3D056DC86ECB /* Pods-ScrollPageControl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollPageControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrence.ScrollPageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5372B9311FE8DADB00095084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollPageControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrence.ScrollPageControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollPageControl.app/ScrollPageControl";
+			};
+			name = Debug;
+		};
+		5372B9321FE8DADB00095084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollPageControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrence.ScrollPageControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollPageControl.app/ScrollPageControl";
+			};
+			name = Release;
+		};
+		5372B9341FE8DADB00095084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollPageControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrence.ScrollPageControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScrollPageControl;
+			};
+			name = Debug;
+		};
+		5372B9351FE8DADB00095084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollPageControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrence.ScrollPageControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScrollPageControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5372B9001FE8DADB00095084 /* Build configuration list for PBXProject "ScrollPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5372B92B1FE8DADB00095084 /* Debug */,
+				5372B92C1FE8DADB00095084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5372B92D1FE8DADB00095084 /* Build configuration list for PBXNativeTarget "ScrollPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5372B92E1FE8DADB00095084 /* Debug */,
+				5372B92F1FE8DADB00095084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5372B9301FE8DADB00095084 /* Build configuration list for PBXNativeTarget "ScrollPageControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5372B9311FE8DADB00095084 /* Debug */,
+				5372B9321FE8DADB00095084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5372B9331FE8DADB00095084 /* Build configuration list for PBXNativeTarget "ScrollPageControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5372B9341FE8DADB00095084 /* Debug */,
+				5372B9351FE8DADB00095084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5372B8FD1FE8DADB00095084 /* Project object */;
+}
