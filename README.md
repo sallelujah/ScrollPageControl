@@ -1,7 +1,5 @@
 # ScrollPageControl
-<div align=center>
 ![image](https://github.com/lawrencehjf/ScrollPageControl/blob/dev/no13.gif)
-</div>
 
 ##Attention（注意）：
 This repo Forked from jasnig's ScrollPageView repo and optimized Swift4.0 version https://github.com/jasnig/ScrollPageView
