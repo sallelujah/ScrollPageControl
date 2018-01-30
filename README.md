@@ -14,7 +14,7 @@
 ###	3、New demo for combine time picker effect 
 	I add a new demo that combined time picker effect.
 	What's inspired me to share this part code's reason is that: when i tried to compare a couple of time strings (like "13:30"),
-	i found a simple way on Stack Overflow https://stackoverflow.com/questions/41646542/how-do-you-compare-just-the-time-of-a-date-in-swift answers 4.
+	i found a simple way on Stack Overflow https://stackoverflow.com/questions/41646542/how-do-you-compare-just-the-time-of-a-date-in-swift 【answers 4】.
 	where they teaches me to use Swift's tuple compare the "minute : seconds "time simply. 
 	which saves me a lot of time and Improved my programing efficiency
 	新添加了一种结合时间选择的更多层次组合的效果，其中最让我想共享这一部分demo之处的原因在于：
