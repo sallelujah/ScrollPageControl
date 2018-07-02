@@ -37,13 +37,14 @@
 	but the author extension the protocol's method and given it a default implementation 
 	and add another notification to tell sub page to action the index change ,
 	hope the next time i can rewrite it and given a better solution.
-	此框架中当每一页面index变化的时候，在告知其中的子控制器的进行响应操作的处理感觉不是很友好，
+	    此框架中当每一页面index变化的时候，在告知其中的子控制器的进行响应操作的处理感觉不是很友好，
 	本来有代理方法(contentViewDidEndMoveToIndex:)可以调用，但是作者选择了extension此协议给其添加了默认实现，
 	转而又添加了一个通知来告知子控制器，导致的结果不言而喻，使用者又得必须再去在子控制器中添加监听
 	（如此感觉就是写的协议方法作用就不大了）。
 	并且这样导致了一个问题就，比如当我的项目中不止一次使用此框架的时候就出现了多处子控制器监听同一个通知的问题
 	（我便在其基础上，在发送通知的时候添加了一个parentVC的通知内容，以让每一个子控制器监听者去判断一一对应关系，
-	否则就会出现一处通知，多处监听而进行不必要误操作情况，这样代码就不可控了）后续抽时间可以考虑进行进一步重写优化一下。
+	否则就会出现一处通知，多处监听而进行不必要误操作情况，这样代码就不可控了）
+	后续抽时间可以考虑进行进一步重写优化一下。
 
 
 
