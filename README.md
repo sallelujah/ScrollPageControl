@@ -3,7 +3,8 @@
 
 ###	Attention（注意）：
 	This repo Forked from jasnig's ScrollPageView repo 
-	and optimized to Swift4.0 version https://github.com/jasnig/ScrollPageView
+	and optimized to Swift4.0 version 
+	![url]https://github.com/jasnig/ScrollPageView
 	此项目是本人之前fork jasnig 的 ScrollPageView 的Swift老版本，并在其基础上更新至4.0的新版本demo。
 # What‘s new & different from old version:
 	与jasnig的Swift老版本不同之处：
@@ -32,7 +33,8 @@
 
 #	TODO：
 	This project has a Unfriendly defect is that when we scroll change the current page index, 
-	the internal sub page(sub ViewController) must add a  observer to know that they should do sth like reload the data. 
+	the internal sub page(sub ViewController) must add a observer to know that
+	they should do sth like reload the data. 
 	actually there's a protocol method(contentViewDidEndMoveToIndex:) that we can use to know the page changed, 
 	but the author extension the protocol's method and given it a default implementation 
 	and add another notification to tell sub page to action the index change ,
